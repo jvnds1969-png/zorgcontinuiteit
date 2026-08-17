@@ -12,10 +12,10 @@
                 extend: {
                     colors: {
                         altrio: {
-                            navy: '#1b365d',     // Het authentieke Altrio donkerblauw
+                            navy: '#1b365d',     // Altrio donkerblauw
                             blue: '#4fa8ff',     // Helder zachtblauw
-                            orange: '#e05326',   // Het kenmerkende accent-oranje/rust
-                            light: '#f4f7fa',    // Lichte achtergrondtint
+                            orange: '#e05326',   // Accent-oranje/rust
+                            light: '#f4f7fa',    // Lichte achtergrond
                             dark: '#0f172a',     // Donkere tekst
                             muted: '#64748b'     // Gedempte tekst
                         }
@@ -36,65 +36,91 @@
 </head>
 <body class="bg-altrio-light text-altrio-dark antialiased">
 
-    <!-- Navigatie/Header -->
+    <!-- Header -->
     <header class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 bg-altrio-navy rounded-lg flex items-center justify-center text-white font-extrabold text-xl">A</div>
                 <div>
                     <span class="text-xl font-extrabold tracking-tight text-altrio-navy">altrio</span>
-                    <span class="block text-[10px] uppercase tracking-widest text-altrio-orange font-bold -mt-1">thuisverpleging</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-altrio-orange font-bold -mt-1">praktijkontwikkeling</span>
                 </div>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-altrio-navy">
-                <a href="#pijlers" class="hover:text-altrio-orange transition">De Pijlers</a>
-                <a href="#flexibiliteit" class="hover:text-altrio-orange transition">B2B vs Loondienst</a>
-                <a href="#calculator" class="text-altrio-orange font-bold hover:text-opacity-80 transition">Bereken Uw Winst</a>
-                <a href="#rendement" class="hover:text-altrio-orange transition">Voorbeeldscenario's</a>
-                <a href="#support" class="hover:text-altrio-orange transition">Premie Support</a>
+                <a href="#tariefplannen" class="hover:text-altrio-orange transition">Onze Plannen</a>
+                <a href="#calculator" class="text-altrio-orange font-bold hover:text-opacity-80 transition">Bereken Uw Voordeel</a>
+                <a href="#menukaart" class="hover:text-altrio-orange transition">De Menukaart</a>
             </nav>
             <div>
-                <a href="#calculator" class="bg-altrio-orange text-white px-5 sm:px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-opacity-90 hover:shadow-lg transition">Bereken scenario</a>
+                <a href="#calculator" class="bg-altrio-orange text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-opacity-90 hover:shadow-lg transition">Premie Calculator</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Sectie -->
-    <section class="relative bg-altrio-navy text-white overflow-hidden py-20 lg:py-32">
+    <!-- Hero -->
+    <section class="bg-altrio-navy text-white py-16 lg:py-24 relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-altrio-blue/20 via-transparent to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 space-y-6">
-                <span class="inline-block bg-altrio-orange text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">Praktijkontwikkeling</span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                    Altrio is uw partner in <span class="text-altrio-blue">praktijkontwikkeling</span>
-                </h1>
-                <p class="text-lg text-gray-300 leading-relaxed max-w-xl">
-                    Delegeer uw klinische routine, verlaag uw administratieve werkdruk en verhoog uw netto praktijkomzet met onze flexibele, zelfstandige praktijkverpleegkundigen.
-                </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                    <a href="#calculator" class="bg-altrio-orange text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-opacity-95 transition text-center"><i class="fa-solid fa-calculator mr-2"></i>Bereken uw voordeel</a>
-                    <a href="#flexibiliteit" class="border-2 border-white/30 text-white hover:border-white px-8 py-3.5 rounded-full font-bold transition text-center">B2B vs Loondienst</a>
-                </div>
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6 relative z-10">
+            <span class="inline-block bg-altrio-orange text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Samen Groeien</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                Kies uw model voor <span class="text-altrio-blue">praktijkondersteuning</span>
+            </h1>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Of u nu kiest voor flexibele pay-per-use of volledige klinische en administratieve ontzorging: Altrio verdient zichzelf gegarandeerd terug.
+            </p>
+        </div>
+    </section>
+
+    <!-- TARIEFPLANNEN SECTIE -->
+    <section id="tariefplannen" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-altrio-navy">Altrio Services: Basis vs. Premium</h2>
+                <p class="text-altrio-muted mt-3">Kies de mate van ondersteuning die bij uw praktijkvisie past.</p>
             </div>
-            <div class="lg:col-span-5 relative">
-                <!-- Visuele KPI Card in Hero -->
-                <div class="bg-white text-altrio-dark p-8 rounded-2xl shadow-2xl relative border-t-4 border-altrio-orange max-w-md mx-auto">
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-altrio-blue rounded-full flex items-center justify-center text-white shadow-md">
-                        <i class="fa-solid fa-check"></i>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Basis Plan -->
+                <div class="bg-altrio-light p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-lg transition duration-300">
+                    <div class="space-y-6">
+                        <span class="bg-altrio-navy text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Basis</span>
+                        <h3 class="text-2xl font-bold text-altrio-navy">Flexibele Ondersteuning</h3>
+                        <p class="text-sm text-altrio-muted">Ideaal voor praktijken die gerichte klinische ondersteuning willen zonder administratieve ontzorging.</p>
+                        
+                        <div class="border-t border-gray-200 pt-6 space-y-4">
+                            <div class="flex items-start text-sm">
+                                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-3 text-base"></i>
+                                <span><strong>Klinisch (Menukaart Solo):</strong> Pure B2B-inzet van verpleegkundigen aan <strong>&euro; 60/uur</strong>.</span>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-3 text-base"></i>
+                                <span><strong>Premie Checker (Basis):</strong> Wij scannen uw praktijk en leveren het Subsidie-Rapport. U vraagt zelf aan. <strong class="text-altrio-orange">(5% fee op verkregen premies)</strong></span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-extrabold text-altrio-navy mb-4">Waarom Huisartsen kiezen voor Altrio:</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center pb-2 border-b border-gray-100">
-                            <span class="text-sm font-medium text-altrio-muted">Netto BTW-tarief</span>
-                            <span class="font-bold text-green-600">0% (Vrijgesteld)</span>
-                        </div>
-                        <div class="flex justify-between items-center pb-2 border-b border-gray-100">
-                            <span class="text-sm font-medium text-altrio-muted">1 uur support levert</span>
-                            <span class="font-bold text-altrio-navy">3 extra consulten op</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-medium text-altrio-muted">RIZIV-continuïteitspremie</span>
-                            <span class="font-bold text-altrio-orange">Al vanaf 6 uur/week</span>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-altrio-orange shadow-xl flex flex-col justify-between relative hover:scale-[1.02] transition duration-300">
+                    <div class="absolute -top-3.5 right-6 bg-altrio-orange text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-widest">Aanbevolen</div>
+                    <div class="space-y-6">
+                        <span class="bg-altrio-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Premium</span>
+                        <h3 class="text-2xl font-bold text-altrio-navy">Volledige Praktijkpartner</h3>
+                        <p class="text-sm text-altrio-muted">Maximale ontzorging. Wij regelen uw premies én uw verpleegkundige verhoogt proactief uw praktijkinkomsten.</p>
+                        
+                        <div class="border-t border-gray-200 pt-6 space-y-4">
+                            <div class="flex items-start text-sm">
+                                <i class="fa-solid fa-circle-check text-altrio-orange mt-1 mr-3 text-base"></i>
+                                <span><strong>Klinisch + EMD Screening:</strong> Actieve opschoning van uw chronische dossiers door de verpleegkundige om extra RIZIV-coördinatiegelden te activeren.</span>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <i class="fa-solid fa-circle-check text-altrio-orange mt-1 mr-3 text-base"></i>
+                                <span><strong>Gegarandeerde continuïteit:</strong> Altijd direct kosteloze vervanging bij ziekte of verlof.</span>
+                            </div>
+                            <div class="flex items-start text-sm">
+                                <i class="fa-solid fa-circle-check text-altrio-orange mt-1 mr-3 text-base"></i>
+                                <span><strong>Premie Support (Premium):</strong> Volledige ontzorging. Wij regelen de SWO's, datering en portalen. <strong class="text-altrio-orange">(Gratis inbegrepen vanaf 6u/week!)</strong> of los aan 10% fee.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,385 +128,180 @@
         </div>
     </section>
 
-    <!-- Pijlers Sectie -->
-    <section id="pijlers" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy tracking-tight">Onze 3 Pijlers voor uw praktijk</h2>
-                <p class="text-altrio-muted mt-4">Een duurzame samenwerking die verder gaat dan louter uren invullen.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-altrio-light p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
-                    <div class="w-12 h-12 bg-altrio-navy/10 rounded-xl flex items-center justify-center text-altrio-navy text-2xl mb-6">
-                        <i class="fa-solid fa-stethoscope"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-altrio-navy mb-3">1. Klinische Ontzorging</h3>
-                    <p class="text-altrio-muted text-sm leading-relaxed">
-                        Delegeer routinetaken zoals bloednames, pre-consulten, wondzorg en diabeteseducatie volgens strikte medische protocollen. U focust op complexe zorg.
-                    </p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-altrio-light p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
-                    <div class="w-12 h-12 bg-altrio-orange/10 rounded-xl flex items-center justify-center text-altrio-orange text-2xl mb-6">
-                        <i class="fa-solid fa-folder-open"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-altrio-navy mb-3">2. Administratieve Rust</h3>
-                    <p class="text-altrio-muted text-sm leading-relaxed">
-                        Onze verpleegkundigen structureren uw chronische zorgpaden en schonen proactief dossiers (EMD) op. Dit activeert automatisch extra RIZIV-coördinatiegelden.
-                    </p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-altrio-light p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
-                    <div class="w-12 h-12 bg-altrio-blue/10 rounded-xl flex items-center justify-center text-altrio-blue text-2xl mb-6">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-altrio-navy mb-3">3. Gegarandeerd Rendement</h3>
-                    <p class="text-altrio-muted text-sm leading-relaxed">
-                        Door de combinatie van de vernieuwde RIZIV-zorgcontinuïteitspremie en extra consultatiecapaciteit, levert onze samenwerking u netto altijd winst op.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- B2B vs Loondienst Sectie -->
-    <section id="flexibiliteit" class="py-20 bg-altrio-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-altrio-orange font-bold text-sm uppercase tracking-wider">Altrio B2B versus Loondienst</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy tracking-tight mt-2">Geen verpleegkundige = Geen kosten</h2>
-                <p class="text-altrio-muted mt-4">Waarom een zelfstandige samenwerking met Altrio veiliger en flexibeler is dan traditioneel aanwerven.</p>
+    <!-- CALCULATOR SECTIE -->
+    <section id="calculator" class="py-20 bg-altrio-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-altrio-navy">Bereken Uw Scenario &amp; Fee-structuur</h2>
+                <p class="text-altrio-muted mt-2">Simuleer in realtime de invloed van uw onthaalbediende, de RIZIV-premie en onze service-fees.</p>
             </div>
 
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-                <div class="grid md:grid-cols-2">
-                    <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-gray-100 bg-red-50/30">
-                        <h3 class="text-lg font-bold text-red-700 flex items-center mb-6">
-                            <i class="fa-solid fa-triangle-exclamation mr-3 text-xl"></i> Zelf aanwerven (Loondienst)
-                        </h3>
-                        <ul class="space-y-4 text-sm text-altrio-gray">
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-xmark text-red-500 mt-1 mr-3"></i>
-                                <span><strong>Financieel Risico:</strong> Kosten lopen onverminderd door bij ziekte, zwangerschapsverlof of vakantiedagen.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-xmark text-red-500 mt-1 mr-3"></i>
-                                <span><strong>Continuïteit:</strong> Bij onverwachte uitval moet u zelf snel vervanging regelen of de werkdruk zelf opvangen.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-xmark text-red-500 mt-1 mr-3"></i>
-                                <span><strong>HR-administratie:</strong> Zware loonadministratie, rekruteringskosten, vakantiegeld en complexe opzegtermijnen.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-8 md:p-12 bg-green-50/10">
-                        <h3 class="text-lg font-bold text-green-700 flex items-center mb-6">
-                            <i class="fa-solid fa-circle-check mr-3 text-xl"></i> Samenwerken met Altrio (B2B)
-                        </h3>
-                        <ul class="space-y-4 text-sm text-altrio-gray">
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-green-600 mt-1 mr-3 font-extrabold"></i>
-                                <span><strong>Gegarandeerde Uren:</strong> Ziekte of verlof? Altrio zorgt kosteloos en direct voor een gekwalificeerde vervanger.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-green-600 mt-1 mr-3 font-extrabold"></i>
-                                <span><strong>Enkel Betalen voor Werk:</strong> Is er geen verpleegkundige actief? Dan heeft u ook 0 euro aan kosten.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-green-600 mt-1 mr-3 font-extrabold"></i>
-                                <span><strong>0% BTW & Geen Admin:</strong> Volledig BTW-vrijgesteld (Art. 44). Eén transparante B2B-factuur per maand en maximale flexibiliteit.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- INTERACTIEVE BEREKENING / OEFENING SECTIE -->
-    <section id="calculator" class="py-20 bg-altrio-navy text-white relative">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-altrio-orange/10 via-transparent to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block bg-altrio-orange text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2">Interactieve Oefening</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Simuleer uw eigen praktijkscenario</h2>
-                <p class="text-gray-300 mt-4">Voer uw gegevens in en zie direct hoe de subsidies en de tijdsbesparing uw bruto-kost volledig ombuigen naar nettowinst.</p>
-            </div>
-
-            <div class="grid lg:grid-cols-12 gap-12 items-start max-w-6xl mx-auto">
-                <!-- Inputs panel -->
-                <div class="lg:col-span-6 bg-white text-altrio-dark p-8 rounded-3xl shadow-2xl space-y-8">
-                    <h3 class="text-xl font-bold text-altrio-navy border-b border-gray-100 pb-4 flex items-center">
-                        <i class="fa-solid fa-sliders mr-3 text-altrio-orange"></i> Uw Praktijkparameters
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <!-- Inputs -->
+                <div class="lg:col-span-5 bg-white p-6 rounded-3xl shadow-md space-y-6">
+                    <h3 class="text-lg font-bold text-altrio-navy flex items-center border-b border-gray-100 pb-3">
+                        <i class="fa-solid fa-sliders mr-3 text-altrio-orange"></i> Uw Praktijk
                     </h3>
-                    
-                    <!-- Parameter 1: Aantal artsen -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center">
-                            <label for="input_artsen" class="font-bold text-sm text-altrio-navy">Aantal actieve huisartsen in de praktijk:</label>
-                            <span id="label_artsen" class="bg-altrio-navy text-white text-xs font-bold px-3 py-1 rounded-full">5 artsen</span>
+
+                    <!-- Artsen -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs font-bold text-altrio-navy">
+                            <span>Aantal huisartsen:</span>
+                            <span id="lbl_artsen" class="text-altrio-orange">5 artsen</span>
                         </div>
-                        <input type="range" id="input_artsen" min="1" max="10" value="5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-altrio-orange">
-                        <span class="text-[10px] text-altrio-muted block">Bepaalt de maximale hoogte van uw gecumuleerde Impulseo-loonkostsubsidie.</span>
+                        <input type="range" id="sl_artsen" min="1" max="10" value="5" class="w-full accent-altrio-orange">
                     </div>
 
-                    <!-- Parameter 2: Nurse uren -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center">
-                            <label for="input_uren" class="font-bold text-sm text-altrio-navy">Gewenste uren verpleegkundige/week (Altrio B2B):</label>
-                            <span id="label_uren" class="bg-altrio-orange text-white text-xs font-bold px-3 py-1 rounded-full">8 uur/week</span>
+                    <!-- Uren -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between text-xs font-bold text-altrio-navy">
+                            <span>Uren Altrio-vpk / week:</span>
+                            <span id="lbl_uren" class="text-altrio-orange">8 uur</span>
                         </div>
-                        <input type="range" id="input_uren" min="0" max="30" value="8" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-altrio-orange">
-                        <span class="text-[10px] text-altrio-muted block">Uw RIZIV-zorgcontinuïteitspremie wordt automatisch geactiveerd vanaf minimaal 6 contracturen.</span>
+                        <input type="range" id="sl_uren" min="0" max="30" value="8" class="w-full accent-altrio-orange">
                     </div>
 
-                    <!-- Parameter 3: Onthaalbediende (Impulseo) Toggle -->
-                    <div class="flex items-center justify-between p-4 bg-altrio-light rounded-2xl border border-gray-100">
-                        <div class="space-y-1">
-                            <span class="font-bold text-sm text-altrio-navy block">Onthaalbediende in loondienst?</span>
-                            <span class="text-[10px] text-altrio-muted block">Indien ja, activeert u de Vlaamse loonkostsubsidie (Impulseo).</span>
+                    <!-- Secretaris Toggle -->
+                    <div class="p-4 bg-altrio-light rounded-2xl flex items-center justify-between">
+                        <div>
+                            <span class="block text-xs font-bold text-altrio-navy">Secretaris in loondienst?</span>
+                            <span class="text-[9px] text-altrio-muted">Activeert loonkost &amp; Impulseo-subsidie.</span>
                         </div>
                         <label class="relative inline-flex items-center cursor-pointer">
-                            <input type="checkbox" id="input_secretaris" checked class="sr-only peer">
-                            <div class="w-14 h-7 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-green-600"></div>
+                            <input type="checkbox" id="chk_sec" checked class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
                         </label>
                     </div>
+
+                    <!-- Secretaris Loonkost slider (indien checked) -->
+                    <div id="box_loonkost" class="space-y-1 pt-3 border-t border-gray-100">
+                        <div class="flex justify-between text-xs font-bold text-altrio-navy">
+                            <span>Loonkost secretaris (per arts/jaar):</span>
+                            <span id="lbl_loonkost" class="text-altrio-orange">&euro; 18.000</span>
+                        </div>
+                        <input type="range" id="sl_loonkost" min="10000" max="30000" step="1000" value="18000" class="w-full accent-altrio-orange">
+                    </div>
                 </div>
 
-                <!-- Outputs panel -->
-                <div class="lg:col-span-6 bg-white/5 border border-white/10 p-8 rounded-3xl shadow-xl space-y-6">
-                    <h3 class="text-xl font-bold border-b border-white/10 pb-4 flex items-center">
-                        <i class="fa-solid fa-chart-pie mr-3 text-altrio-blue"></i> Financiële Resultaten (Jaarbasis)
-                    </h3>
-
-                    <div class="space-y-4 text-sm">
-                        <!-- Bruto kost -->
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-300">Bruto investering Altrio (0% BTW):</span>
-                            <span id="out_bruto" class="font-bold text-red-400">€ 23.040,00</span>
-                        </div>
-
-                        <!-- RIZIV Premie -->
-                        <div class="flex justify-between items-center pb-2 border-b border-white/10">
-                            <span class="text-gray-300 flex items-center">
-                                RIZIV-Zorgcontinuïteitspremie:
-                                <span id="out_premie_label" class="ml-2 text-[10px] bg-altrio-blue text-altrio-navy font-bold px-1.5 py-0.5 rounded">6u-12u schijf</span>
-                            </span>
-                            <span id="out_premie" class="font-bold text-altrio-blue">+ € 3.000,00*</span>
-                        </div>
-
-                        <!-- Impulseo subsidie -->
-                        <div class="flex justify-between items-center pb-2 border-b border-white/10">
-                            <span class="text-gray-300">Vlaamse Loonkostsubsidie (Impulseo):</span>
-                            <span id="out_impulseo" class="font-bold text-green-400">+ € 41.650,95</span>
-                        </div>
-
-                        <!-- Extra omzet consulten -->
-                        <div class="flex justify-between items-center pb-2 border-b border-white/10">
-                            <span class="text-gray-300">Extra omzet (3 extra consulten/vpk-uur):</span>
-                            <span id="out_omzet" class="font-bold text-green-400">+ € 34.560,00</span>
-                        </div>
-
-                        <!-- Netto resultaat -->
-                        <div class="p-5 bg-white/5 rounded-2xl border border-white/15 flex flex-col sm:flex-row justify-between items-center">
-                            <div class="text-center sm:text-left mb-3 sm:mb-0">
-                                <span class="block text-xs uppercase tracking-wider text-gray-400 font-bold">Uw Netto Voordeel:</span>
-                                <span class="text-[10px] text-gray-300">Inclusief tijdsbesparing & alle subsidies</span>
+                <!-- Outputs Comparison -->
+                <div class="lg:col-span-7 grid md:grid-cols-2 gap-6">
+                    <!-- Basis Card -->
+                    <div class="bg-white p-6 rounded-3xl shadow-md border-t-4 border-altrio-navy flex flex-col justify-between space-y-6">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-altrio-muted tracking-widest">Altrio Basis</span>
+                            <h4 class="text-xl font-bold text-altrio-navy mt-1">Gedeeltelijke Ontzorging</h4>
+                            
+                            <div class="mt-6 space-y-3 text-xs">
+                                <div class="flex justify-between">
+                                    <span class="text-altrio-muted">Klinische kost VPK:</span>
+                                    <span id="b_kost" class="font-semibold text-red-500">&euro; 0</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-altrio-muted">Extra medische omzet:</span>
+                                    <span id="b_omzet" class="font-semibold text-green-600">&euro; 0</span>
+                                </div>
+                                <div id="b_sec_row" class="flex justify-between">
+                                    <span class="text-altrio-muted">Netto secretariskost*:</span>
+                                    <span id="b_sec" class="font-semibold text-red-500">&euro; 0</span>
+                                </div>
+                                <div class="flex justify-between font-semibold text-altrio-navy">
+                                    <span>RIZIV-premie:</span>
+                                    <span id="b_premie">&euro; 0</span>
+                                </div>
+                                <div class="flex justify-between text-altrio-orange">
+                                    <span>Support Fee (5%):</span>
+                                    <span id="b_fee">&euro; 0</span>
+                                </div>
                             </div>
-                            <span id="out_netto" class="text-3xl font-black text-altrio-orange">+ € 56.170,95</span>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-100 text-center">
+                            <span class="block text-[10px] uppercase font-bold text-altrio-muted">Netto Jaarresultaat</span>
+                            <span id="b_netto" class="text-2xl font-black text-altrio-navy">&euro; 0</span>
                         </div>
                     </div>
 
-                    <div class="text-[10px] text-gray-400 leading-relaxed space-y-1">
-                        <p>* RIZIV-premie berekend op basis van het gemiddelde van de schijf waarin uw uren vallen.</p>
-                        <p>** Impulseo loonkostsubsidie berekend op basis van maximaal € 8.330,19 per actieve arts per jaar.</p>
+                    <!-- Premium Card -->
+                    <div class="bg-white p-6 rounded-3xl shadow-md border-2 border-altrio-orange flex flex-col justify-between space-y-6 relative overflow-hidden">
+                        <div class="absolute -top-1 right-0 bg-altrio-orange text-white text-[9px] font-extrabold px-3 py-1 uppercase tracking-widest rounded-bl-xl">Beste Keuze</div>
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-altrio-orange tracking-widest">Altrio Premium</span>
+                            <h4 class="text-xl font-bold text-altrio-navy mt-1">Maximale Winst</h4>
+                            
+                            <div class="mt-6 space-y-3 text-xs">
+                                <div class="flex justify-between">
+                                    <span class="text-altrio-muted">Klinische kost VPK:</span>
+                                    <span id="p_kost" class="font-semibold text-red-500">&euro; 0</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-altrio-muted">Extra medische omzet:</span>
+                                    <span id="p_omzet" class="font-semibold text-green-600">&euro; 0</span>
+                                </div>
+                                <div id="p_sec_row" class="flex justify-between">
+                                    <span class="text-altrio-muted">Netto secretariskost*:</span>
+                                    <span id="p_sec" class="font-semibold text-red-500">&euro; 0</span>
+                                </div>
+                                <div class="flex justify-between font-semibold text-altrio-navy">
+                                    <span>RIZIV-premie:</span>
+                                    <span id="p_premie">&euro; 0</span>
+                                </div>
+                                <div class="flex justify-between text-green-600 font-bold">
+                                    <span>Support Fee:</span>
+                                    <span id="p_fee">GRATIS**</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-gray-100 text-center">
+                            <span class="block text-[10px] uppercase font-bold text-altrio-muted">Netto Jaarresultaat</span>
+                            <span id="p_netto" class="text-2xl font-black text-altrio-orange">&euro; 0</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Voorbeeldscenario's Sectie -->
-    <section id="rendement" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy tracking-tight">Vaste Referentiescenario's</h2>
-                <p class="text-altrio-muted mt-4">
-                    In elk scenario hieronder geniet u tevens van <strong>4 uur gratis prikondersteuning</strong> via het labo. De uren hieronder zijn de additionele menukaart-uren via Altrio à € 60/uur (vrijgesteld van BTW).
-                </p>
-            </div>
-
-            <!-- Desktop & Mobile Responsive Tabel -->
-            <div class="overflow-x-auto shadow-xl rounded-2xl border border-gray-100 max-w-5xl mx-auto">
-                <table class="w-full text-left border-collapse bg-white">
-                    <thead>
-                        <tr class="bg-altrio-navy text-white">
-                            <th class="p-5 font-bold text-sm uppercase">Uren Altrio / week</th>
-                            <th class="p-5 font-bold text-sm uppercase">Bruto Jaarkost (0% BTW)</th>
-                            <th class="p-5 font-bold text-sm uppercase">RIZIV-premie Zorgcontinuïteit</th>
-                            <th class="p-5 font-bold text-sm uppercase">Extra medische jaaromzet*</th>
-                            <th class="p-5 font-bold text-sm uppercase bg-altrio-orange text-center">Netto Jaaropbrengst (Winst!)</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-100 text-sm">
-                        <!-- Scenario 1 -->
-                        <tr class="hover:bg-altrio-light transition">
-                            <td class="p-5 font-bold">4 uur</td>
-                            <td class="p-5 text-altrio-muted">€ 11.520,00</td>
-                            <td class="p-5 text-red-500 font-medium"><em>Geen (drempel is 6u)</em></td>
-                            <td class="p-5 text-green-600 font-semibold">+ € 17.280,00</td>
-                            <td class="p-5 font-extrabold text-altrio-navy text-center bg-altrio-light/50">+ € 5.760,00</td>
-                        </tr>
-                        <!-- Scenario 2 -->
-                        <tr class="hover:bg-altrio-light transition">
-                            <td class="p-5 font-bold">8 uur</td>
-                            <td class="p-5 text-altrio-muted">€ 23.040,00</td>
-                            <td class="p-5 text-altrio-navy font-semibold">€ 2.000 – € 4.000</td>
-                            <td class="p-5 text-green-600 font-semibold">+ € 34.560,00</td>
-                            <td class="p-5 font-extrabold text-altrio-navy text-center bg-altrio-light/50">+ € 13.520,00 tot € 15.520,00</td>
-                        </tr>
-                        <!-- Scenario 3 -->
-                        <tr class="hover:bg-altrio-light transition">
-                            <td class="p-5 font-bold">10 uur</td>
-                            <td class="p-5 text-altrio-muted">€ 28.800,00</td>
-                            <td class="p-5 text-altrio-navy font-semibold">€ 2.000 – € 4.000</td>
-                            <td class="p-5 text-green-600 font-semibold">+ € 43.200,00</td>
-                            <td class="p-5 font-extrabold text-altrio-navy text-center bg-altrio-light/50">+ € 16.400,00 tot € 18.400,00</td>
-                        </tr>
-                        <!-- Scenario 4 -->
-                        <tr class="hover:bg-altrio-light transition">
-                            <td class="p-5 font-bold">12 uur</td>
-                            <td class="p-5 text-altrio-muted">€ 34.560,00</td>
-                            <td class="p-5 text-altrio-navy font-semibold">€ 2.000 – € 4.000</td>
-                            <td class="p-5 text-green-600 font-semibold">+ € 51.840,00</td>
-                            <td class="p-5 font-extrabold text-altrio-navy text-center bg-altrio-light/50">+ € 19.280,00 tot € 21.280,00</td>
-                        </tr>
-                        <!-- Scenario 5 -->
-                        <tr class="hover:bg-altrio-light bg-altrio-light/10 transition">
-                            <td class="p-5 font-bold flex items-center">
-                                14 uur 
-                                <span class="ml-2 bg-altrio-orange text-white text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded">Hefboom!</span>
-                            </td>
-                            <td class="p-5 text-altrio-muted">€ 40.320,00</td>
-                            <td class="p-5 text-altrio-navy font-semibold">€ 5.000 – € 10.000</td>
-                            <td class="p-5 text-green-600 font-semibold">+ € 60.480,00</td>
-                            <td class="p-5 font-extrabold text-altrio-navy text-center bg-orange-50/50 text-altrio-orange">+ € 25.160,00 tot € 30.160,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="max-w-5xl mx-auto mt-4 text-[11px] text-altrio-muted">
-                * Uitgaande van een conservatieve inschatting waarbij 1 uur verpleegkundige ondersteuning levert 1 uur tijdwinst op voor de artsen, waarin zij 3 extra consultaties à € 30,00 uitvoeren. Jaarkosten berekend op basis van 48 actieve werkweken.
+            
+            <div class="max-w-6xl mx-auto mt-6 text-[10px] text-altrio-muted space-y-1">
+                <p>* Netto secretariskost = de werkelijke bruto loonkost van uw secretariaat minus de ontvangen Vlaamse Impulseo-loonkostsubsidie (max. € 8.330,19 per arts/jaar).</p>
+                <p>** De Premium Support-service (10% fee) is volledig GRATIS inbegrepen bij de inzet van een Altrio-verpleegkundige vanaf 6 uur per week.</p>
             </div>
         </div>
     </section>
 
-    <!-- Menukaart Match Sectie -->
-    <section id="menukaart" class="py-20 bg-altrio-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- MENUKAART MATCH SECTIE -->
+    <section id="menukaart" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="inline-block bg-altrio-navy text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2">Service Match</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy tracking-tight">Koppel uw noden aan onze menukaart</h2>
-                <p class="text-altrio-muted mt-4">De diensten van onze Altrio Menukaart worden perfect gesubsidieerd en gefinancierd via de nieuwe regeling.</p>
+                <h2 class="text-3xl font-extrabold text-altrio-navy">Gefinancierde Menukaart-Diensten</h2>
+                <p class="text-altrio-muted mt-3">Koppel uw klinische noden direct aan onze menukaart en activeer de juiste subsidies.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Dienst 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-altrio-navy relative">
-                    <span class="absolute -top-3.5 left-6 bg-altrio-navy text-white text-xs font-bold px-2.5 py-1 rounded-full">Dienst 01 & 08</span>
-                    <h3 class="text-lg font-bold text-altrio-navy mt-2 mb-3">Diabeteseducatie</h3>
-                    <p class="text-altrio-muted text-xs leading-relaxed mb-4">
-                        Onze educators voeren actieve case-finding uit in uw EMD. Dit activeert direct de jaarlijkse RIZIV-coördinatiegelden van <strong>€ 26,45</strong> (Opstarttraject) of <strong>€ 114,61</strong> (Zorgtraject) per patiënt voor de arts.
-                    </p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-altrio-light p-6 rounded-2xl border border-gray-100 relative pt-10">
+                    <span class="absolute -top-3.5 left-6 bg-altrio-navy text-white text-xs font-bold px-3 py-1 rounded-full">Dienst 01 &amp; 08</span>
+                    <h4 class="text-lg font-bold text-altrio-navy mb-2">Diabeteseducatie</h4>
+                    <p class="text-xs text-altrio-muted leading-relaxed">De educator voert proactief case-finding uit in uw EMD. Dit activeert direct de RIZIV-coördinatiegelden van <strong>&euro; 26,45</strong> (Opstarttraject) of <strong>&euro; 114,61</strong> (Zorgtraject) per patiënt voor de arts.</p>
                 </div>
-                <!-- Dienst 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-altrio-blue relative">
-                    <span class="absolute -top-3.5 left-6 bg-altrio-blue text-white text-xs font-bold px-2.5 py-1 rounded-full">Dienst 03 & 10</span>
-                    <h3 class="text-lg font-bold text-altrio-navy mt-2 mb-3">Bloednames & Triage</h3>
-                    <p class="text-altrio-muted text-xs leading-relaxed mb-4">
-                        Combineer de 4 uur gratis prikondersteuning via uw laboratoriumpartner slim met extra menukaart-uren van Altrio om direct uw RIZIV-premie zorgcontinuïteit te activeren.
-                    </p>
+                <div class="bg-altrio-light p-6 rounded-2xl border border-gray-100 relative pt-10">
+                    <span class="absolute -top-3.5 left-6 bg-altrio-blue text-white text-xs font-bold px-3 py-1 rounded-full">Dienst 03 &amp; 10</span>
+                    <h4 class="text-lg font-bold text-altrio-navy mb-2">Bloednames &amp; Triage</h4>
+                    <p class="text-xs text-altrio-muted leading-relaxed">Combineer uw 4 uur gratis prikondersteuning via uw labopartner slim met extra betalende uren om de drempel voor de continuïteitspremie te activeren.</p>
                 </div>
-                <!-- Dienst 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-altrio-orange relative">
-                    <span class="absolute -top-3.5 left-6 bg-altrio-orange text-white text-xs font-bold px-2.5 py-1 rounded-full">Dienst 04, 06, 07, 13</span>
-                    <h3 class="text-lg font-bold text-altrio-navy mt-2 mb-3">Geïntegreerde Ondersteuning</h3>
-                    <p class="text-altrio-muted text-xs leading-relaxed mb-4">
-                        Inzet voor technische wondzorg, geriatrische screening, triage of een volwaardige Verpleegkundige in de Huisartsenpraktijk (VIHP). Volledig gedekt door uw zorgcontinuïteitspremie.
-                    </p>
+                <div class="bg-altrio-light p-6 rounded-2xl border border-gray-100 relative pt-10">
+                    <span class="absolute -top-3.5 left-6 bg-altrio-orange text-white text-xs font-bold px-3 py-1 rounded-full">Dienst 04, 06, 07, 13</span>
+                    <h4 class="text-lg font-bold text-altrio-navy mb-2">Integrale Zorg &amp; Support</h4>
+                    <p class="text-xs text-altrio-muted leading-relaxed">Inzet voor technische wondzorg, geriatrische screening of een volwaardige VIHP in de praktijk. Volledig gedekt en gefinancierd door uw RIZIV-premie.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Premie Support Service Sectie -->
-    <section id="support" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy tracking-tight">Onze 'Premie Support Service' ontzorgt u volledig</h2>
-                <p class="text-altrio-muted mt-4">Huisartsen laten enorm veel subsidies liggen door tijdsgebrek of administratieve angst. Wij nemen de volledige rompslomp uit handen!</p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto relative">
-                <!-- Step 1 -->
-                <div class="relative text-center md:text-left">
-                    <div class="w-10 h-10 bg-altrio-navy text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 mx-auto md:mx-0">1</div>
-                    <h4 class="text-base font-bold text-altrio-navy mb-2">Gratis Premiescan</h4>
-                    <p class="text-altrio-muted text-xs">Kristof en Joris scannen uw praktijkvolume en brengen al uw beschikbare premies en RIZIV-gelden overzichtelijk in kaart.</p>
-                </div>
-                <!-- Step 2 -->
-                <div class="relative text-center md:text-left">
-                    <div class="w-10 h-10 bg-altrio-orange text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 mx-auto md:mx-0">2</div>
-                    <h4 class="text-base font-bold text-altrio-navy mb-2">Waterdichte SWO's</h4>
-                    <p class="text-altrio-muted text-xs">Katrien en ons admin-team stellen de vereiste Samenwerkingsovereenkomsten (SWO) correct op voor de drempelwaarden.</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="relative text-center md:text-left">
-                    <div class="w-10 h-10 bg-altrio-blue text-altrio-navy rounded-full flex items-center justify-center font-bold text-lg mb-4 mx-auto md:mx-0">3</div>
-                    <h4 class="text-base font-bold text-altrio-navy mb-2">De Oktober-Tactiek</h4>
-                    <p class="text-altrio-muted text-xs">Voor bestaande relaties dateren we lopende contracten op 01/01/2026. Zo stelt u uw recht op de 2026-subsidie veilig in oktober.</p>
-                </div>
-                <!-- Step 4 -->
-                <div class="relative text-center md:text-left">
-                    <div class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 mx-auto md:mx-0">4</div>
-                    <h4 class="text-base font-bold text-altrio-navy mb-2">Portaal Begeleiding</h4>
-                    <p class="text-altrio-muted text-xs">In oktober loodsen we uw praktijk stap-voor-stap door het ProGezondheid-portaal voor een vlekkeloze uitbetaling.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA / Contact Sectie -->
-    <section id="contact" class="py-20 bg-altrio-navy text-white relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Klaar om uw praktijk te laten groeien?</h2>
-            <p class="text-gray-300 text-base max-w-2xl mx-auto">
-                Neem contact op met uw lokale Altrio Regiocoördinator voor een gratis en vrijblijvende <strong>Premiescan</strong>. We rekenen uw praktijkuiterst nauwkeurig door en leggen uw verborgen winst bloot.
-            </p>
-            
-            <div class="pt-6 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <a href="mailto:info@altrio.be" class="bg-altrio-orange text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-opacity-95 transition flex items-center">
-                    <i class="fa-solid fa-envelope mr-3 text-lg"></i> Vraag uw premiescan aan
-                </a>
-                <a href="tel:032339243" class="text-white hover:text-altrio-blue transition font-bold flex items-center">
-                    <i class="fa-solid fa-phone mr-3 text-lg"></i> 03 233 92 43
-                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-altrio-navy/95 text-gray-400 py-12 border-t border-white/10 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+    <footer class="bg-altrio-navy text-gray-400 py-12 text-xs">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0 text-center md:text-left">
-                <span class="text-base font-extrabold tracking-tight text-white block">altrio</span>
+                <span class="text-base font-extrabold text-white block">altrio</span>
                 <span class="text-[10px] uppercase tracking-widest text-altrio-orange font-bold">Partner in Praktijkontwikkeling</span>
-            </div>
-            <div class="flex space-x-6 mb-6 md:mb-0">
-                <a href="https://altrio.be" class="hover:text-white transition">Website</a>
-                <a href="#flexibiliteit" class="hover:text-white transition">B2B voordelen</a>
-                <a href="#rendement" class="hover:text-white transition">Tarief- en scenarioberekening</a>
             </div>
             <div class="text-center md:text-right text-[10px] text-gray-500">
                 &copy; 2026 Altrio Thuisverpleging. Alle rechten voorbehouden. BTW-vrijgesteld conform Art. 44 W.BTW.
@@ -488,109 +309,121 @@
         </div>
     </footer>
 
-    <!-- INTERACTIEVE CALCULATION JAVASCRIPT LOGICA -->
+    <!-- INTERACTIEVE LOGICA -->
     <script>
-        const inputArtsen = document.getElementById('input_artsen');
-        const inputUren = document.getElementById('input_uren');
-        const inputSecretaris = document.getElementById('input_secretaris');
+        const slArtsen = document.getElementById('sl_artsen');
+        const slUren = document.getElementById('sl_uren');
+        const chkSec = document.getElementById('chk_sec');
+        const slLoonkost = document.getElementById('sl_loonkost');
 
-        const labelArtsen = document.getElementById('label_artsen');
-        const labelUren = document.getElementById('label_uren');
+        const lblArtsen = document.getElementById('lbl_artsen');
+        const lblUren = document.getElementById('lbl_uren');
+        const lblLoonkost = document.getElementById('lbl_loonkost');
+        const boxLoonkost = document.getElementById('box_loonkost');
 
-        const outBruto = document.getElementById('out_bruto');
-        const outPremie = document.getElementById('out_premie');
-        const outPremieLabel = document.getElementById('out_premie_label');
-        const outImpulseo = document.getElementById('out_impulseo');
-        const outOmzet = document.getElementById('out_omzet');
-        const outNetto = document.getElementById('out_netto');
+        const bKost = document.getElementById('b_kost');
+        const bOmzet = document.getElementById('b_omzet');
+        const bSec = document.getElementById('b_sec');
+        const bSecRow = document.getElementById('b_sec_row');
+        const bPremie = document.getElementById('b_premie');
+        const bFee = document.getElementById('b_fee');
+        const bNetto = document.getElementById('b_netto');
 
-        function formatVal(val) {
+        const pKost = document.getElementById('p_kost');
+        const pOmzet = document.getElementById('p_omzet');
+        const pSec = document.getElementById('p_sec');
+        const pSecRow = document.getElementById('p_sec_row');
+        const pPremie = document.getElementById('p_premie');
+        const pFee = document.getElementById('p_fee');
+        const pNetto = document.getElementById('p_netto');
+
+        function format(val) {
             return new Intl.NumberFormat('nl-BE', { style: 'currency', currency: 'EUR' }).format(val);
         }
 
-        function recalculate() {
-            const artsen = parseInt(inputArtsen.value);
-            const uren = parseFloat(inputUren.value);
-            const heeftSecretaris = inputSecretaris.checked;
+        function run() {
+            const artsen = parseInt(slArtsen.value);
+            const uren = parseFloat(slUren.value);
+            const heeftSec = chkSec.checked;
+            const loonkostPerArts = parseFloat(slLoonkost.value);
 
+            lblArtsen.textContent = artsen === 1 ? '1 arts' : `${artsen} artsen`;
+            lblUren.textContent = `${uren} uur/week`;
+            lblLoonkost.textContent = format(loonkostPerArts);
+
+            boxLoonkost.style.display = heeftSec ? 'block' : 'none';
+            bSecRow.style.display = heeftSec ? 'flex' : 'none';
+            pSecRow.style.display = heeftSec ? 'flex' : 'none';
+
+            // Basis parameters
             const weken = 48;
-            const uurtarief = 60;
-            const consultWaarde = 30;
-            const consultenPerUur = 3;
+            const vpkKost = uren * 60 * weken;
+            const extraOmzet = uren * 3 * 30 * weken;
 
-            // Update Labels
-            labelArtsen.textContent = artsen === 1 ? '1 arts' : `${artsen} artsen`;
-            labelUren.textContent = `${uren} uur/week`;
+            // Secretariskost & Impulseo
+            let secKostBruto = 0;
+            let impulseoSubsidie = 0;
+            if (heeftSec) {
+                secKostBruto = loonkostPerArts * artsen;
+                impulseoSubsidie = Math.min(loonkostPerArts * 0.5, 8330.19) * artsen;
+            }
+            const nettoSecKost = secKostBruto - impulseoSubsidie;
 
-            // 1. Bruto Kost
-            const brutoKost = uren * uurtarief * weken;
-            outBruto.textContent = formatVal(brutoKost);
-
-            // 2. RIZIV Continuïteitspremie
-            let premieMin = 0;
-            let premieMax = 0;
-            let premieLabel = "Geen premie (< 6 uur)";
-
+            // RIZIV Zorgcontinuïteitspremie
+            let premieVal = 0;
+            let premieLabel = "Geen premie";
             if (uren >= 6 && uren <= 12) {
-                premieMin = 2000;
-                premieMax = 4000;
-                premieLabel = "Schijf 1 (6u-12u)";
+                premieVal = 3000;
+                premieLabel = "Schijf 1 (gem. €3k)";
             } else if (uren > 12 && uren <= 19) {
-                premieMin = 5000;
-                premieMax = 10000;
-                premieLabel = "Schijf 2 (>12u-19u)";
-            } else if (uren > 19 && uren <= 38) {
-                premieMin = 9093;
-                premieMax = 18187;
-                premieLabel = "Schijf 3 (>19u-38u)";
-            } else if (uren > 38 && uren <= 57) {
-                premieMin = 9731;
-                premieMax = 19463;
-                premieLabel = "Schijf 4 (>38u-57u)";
-            } else if (uren > 57) {
-                premieMin = 11564;
-                premieMax = 23129;
-                premieLabel = "Hoogste schijf (>57u)";
+                premieVal = 7500;
+                premieLabel = "Schijf 2 (gem. €7.5k)";
+            } else if (uren > 19) {
+                premieVal = 13640;
+                premieLabel = "Schijf 3+ (gem. €13.6k)";
             }
 
-            const premieGemiddelde = (premieMin + premieMax) / 2;
-            outPremieLabel.textContent = premieLabel;
-            
-            if (premieMax === 0) {
-                outPremie.textContent = formatVal(0);
-                outPremie.className = "font-bold text-red-400";
+            // --- BEREKENING BASIS MODEL (5% fee op de premie) ---
+            const bSupportFee = premieVal * 0.05;
+            const bNettoResultaat = extraOmzet + premieVal - vpkKost - nettoSecKost - bSupportFee;
+
+            bKost.textContent = format(vpkKost);
+            bOmzet.textContent = `+ ${format(extraOmzet)}`;
+            bSec.textContent = `- ${format(nettoSecKost)}`;
+            bPremie.textContent = `+ ${format(premieVal)} (${premieLabel})`;
+            bFee.textContent = `- ${format(bSupportFee)}`;
+            bNetto.textContent = format(bNettoResultaat);
+            bNetto.className = bNettoResultaat >= 0 ? "text-2xl font-black text-green-600" : "text-2xl font-black text-red-500";
+
+            // --- BEREKENING PREMIUM MODEL (Gratis fee bij >=6u vpk) ---
+            let pSupportFee = 0;
+            if (uren < 6) {
+                // Indien < 6u verpleegkundige, is de Premie checker los te koop aan 10% fee
+                pSupportFee = premieVal * 0.10;
+                pFee.textContent = `- ${format(pSupportFee)}`;
+                pFee.className = "font-semibold text-red-500";
             } else {
-                outPremie.textContent = `+ ${formatVal(premieGemiddelde)} (gem.)`;
-                outPremie.className = "font-bold text-altrio-blue";
+                pSupportFee = 0; // Gratis bij >= 6u
+                pFee.textContent = "GRATIS INBEGREPEN";
+                pFee.className = "font-bold text-green-600";
             }
 
-            // 3. Impulseo (Loonkostsubsidie)
-            const impulseoSubsidie = heeftSecretaris ? (artsen * 8330.19) : 0;
-            outImpulseo.textContent = `+ ${formatVal(impulseoSubsidie)}`;
+            const pNettoResultaat = extraOmzet + premieVal - vpkKost - nettoSecKost - pSupportFee;
 
-            // 4. Extra Consultatieomzet
-            const extraOmzet = uren * consultenPerUur * consultWaarde * weken;
-            outOmzet.textContent = `+ ${formatVal(extraOmzet)}`;
-
-            // 5. Netto Resultaat
-            const nettoResultaat = extraOmzet + premieGemiddelde + impulseoSubsidie - brutoKost;
-            
-            if (nettoResultaat >= 0) {
-                outNetto.textContent = `+ ${formatVal(nettoResultaat)}`;
-                outNetto.className = "text-3xl font-black text-green-400";
-            } else {
-                outNetto.textContent = `${formatVal(nettoResultaat)}`;
-                outNetto.className = "text-3xl font-black text-red-400";
-            }
+            pKost.textContent = format(vpkKost);
+            pOmzet.textContent = `+ ${format(extraOmzet)}`;
+            pSec.textContent = `- ${format(nettoSecKost)}`;
+            pPremie.textContent = `+ ${format(premieVal)} (${premieLabel})`;
+            pNetto.textContent = format(pNettoResultaat);
+            pNetto.className = pNettoResultaat >= 0 ? "text-2xl font-black text-altrio-orange" : "text-2xl font-black text-red-500";
         }
 
-        // Event listeners voor real-time calculaties
-        inputArtsen.addEventListener('input', recalculate);
-        inputUren.addEventListener('input', recalculate);
-        inputSecretaris.addEventListener('change', recalculate);
+        slArtsen.addEventListener('input', run);
+        slUren.addEventListener('input', run);
+        chkSec.addEventListener('change', run);
+        slLoonkost.addEventListener('input', run);
 
-        // Initiële calculatie bij het laden van de pagina
-        recalculate();
+        run();
     </script>
 </body>
 </html>
