@@ -12,10 +12,10 @@
                 extend: {
                     colors: {
                         altrio: {
-                            navy: '#1b365d',     // Altrio donkerblauw
+                            navy: '#1b365d',     // Het authentieke Altrio donkerblauw
                             blue: '#4fa8ff',     // Helder zachtblauw
-                            orange: '#e05326',   // Accent-oranje/rust
-                            light: '#f8fafc',    // Lichte achtergrond
+                            orange: '#e05326',   // Het kenmerkende accent-oranje/rust
+                            light: '#f8fafc',    // Zachte, lichte achtergrond
                             dark: '#0f172a',     // Slate 900
                             muted: '#475569'     // Slate 600
                         }
@@ -27,7 +27,7 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             scroll-behavior: smooth;
@@ -36,7 +36,7 @@
 </head>
 <body class="bg-altrio-light text-altrio-dark antialiased">
 
-    <!-- Header -->
+    <!-- Navigatie/Header -->
     <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
@@ -52,33 +52,41 @@
                 <a href="#calculator" class="text-altrio-orange font-bold hover:text-opacity-80 transition">Scenario Simulator</a>
             </nav>
             <div>
-                <a href="#calculator" class="bg-altrio-orange text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-opacity-90 hover:shadow-lg transition">Bereken Uw Winst</a>
+                <a href="#calculator" class="bg-altrio-orange text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-opacity-90 hover:shadow-lg transition">Bereken Uw Voordeel</a>
             </div>
         </div>
     </header>
 
-    <!-- Visie & Belofte -->
-    <section id="visie" class="py-16 bg-white border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
-            <span class="inline-block bg-altrio-orange/10 text-altrio-orange text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Onze Visie</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy tracking-tight">Wij creëren rust in uw huisartsenpraktijk</h2>
-            <p class="text-lg text-altrio-muted leading-relaxed">
-                Huisartsen dragen vandaag de dag een loodzware klinische en administratieve last. Door preventieve en chronische zorgtrajecten structureel over te dragen aan de verpleegkundigen van Altrio, ontzorgen wij uw praktijk op een veilige en professionele manier. 
+    <!-- Visie & Belofte Hero -->
+    <section id="visie" class="relative bg-altrio-navy text-white overflow-hidden py-20 lg:py-32 border-b border-slate-100">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-altrio-blue/20 via-transparent to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-8 relative z-10">
+            <span class="inline-block bg-altrio-orange text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Onze Belofte</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                Wij creëren <span class="text-altrio-blue">rust en ruimte</span> in uw huisartsenpraktijk
+            </h1>
+            <p class="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                Huisartsen dragen vandaag de vanzelfsprekendheid van een loodzware klinische en administratieve last. Door preventieve en chronische zorgtrajecten structureel over te dragen aan de verpleegkundigen van Altrio, ontzorgen wij uw praktijk op een veilige en professionele manier.
             </p>
-            <div class="p-6 bg-altrio-light rounded-2xl border border-slate-100 max-w-2xl mx-auto">
-                <p class="text-sm font-medium text-altrio-navy italic">
-                    "Patiënten die veel tijd en aandacht vergen worden warm naar onze gespecialiseerde zorgkrachten geleid. Zo wint u kostbare tijd terug voor complexe medische dossiers en doet u weer wat u écht graag doet."
+            <div class="p-6 bg-white/5 rounded-2xl border border-white/10 max-w-2xl mx-auto backdrop-blur-sm">
+                <p class="text-base font-medium text-altrio-blue italic">
+                    "Patiënten die veel tijd en aandacht vergen, worden warm naar onze gespecialiseerde zorgkrachten geleid. Zo wint u kostbare tijd terug voor complexe medische dossiers, verlaagt u uw werkdruk en doet u weer wat u écht graag doet."
                 </p>
+            </div>
+            <div class="pt-4">
+                <a href="#calculator" class="bg-altrio-orange text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-opacity-95 transition text-center inline-block">
+                    <i class="fa-solid fa-calculator mr-2"></i>Start de Scenario Simulator
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Tarieven -->
+    <!-- Tarieven & Formules -->
     <section id="tarieven" class="py-20 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-3xl font-extrabold text-altrio-navy">Drie Sluitende Formules</h2>
-                <p class="text-altrio-muted mt-3">Van uiterst flexibele ondersteuning tot volledige praktijkontwikkeling.</p>
+                <p class="text-altrio-muted mt-3">Van uiterst flexibele ondersteuning tot volledige praktijkontwikkeling en populatiemanagement.</p>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8 items-stretch">
@@ -90,12 +98,12 @@
                             <span class="text-sm font-extrabold text-slate-500">Ad-Hoc</span>
                         </div>
                         <h3 class="text-2xl font-bold text-altrio-navy">Menukaart Solo</h3>
-                        <p class="text-xs text-altrio-muted">Gerichte klinische ondersteuning voor specifieke taken uit de menukaart (bijv. alleen diabeteseducatie of prikdagen).</p>
+                        <p class="text-xs text-altrio-muted">Gerichte klinische ondersteuning voor specifieke taken uit de menukaart (bijv. alleen diabeteseducatie of bloednames).</p>
                         <div class="space-y-3 pt-4 border-t border-slate-100 text-xs text-altrio-muted">
                             <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i><span>Inzet tot <b>maximaal 10 uur/week</b></span></div>
                             <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i><span><b>Uurtarief: € 60,-</b> (BTW-vrij)</span></div>
                             <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i><span>Gratis toegang tot de online <b>Altrio Premietool</b></span></div>
-                            <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i><span>Premie checker &amp; aanvraag: <b>5% fee</b> op opbrengst</span></div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i><span>Premie checker &amp; aanvraag: <b>5% fee</b> op de premie</span></div>
                         </div>
                     </div>
                 </div>
@@ -111,7 +119,7 @@
                         <h3 class="text-2xl font-bold text-altrio-navy">Community Partner</h3>
                         <p class="text-xs text-altrio-muted">Onze meest populaire formule voor structurele ondersteuning, netwerksynergie en maximale premie-inkomsten.</p>
                         <div class="space-y-3 pt-4 border-t border-slate-100 text-xs text-altrio-muted">
-                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-orange mr-2"></i><span>Keuze uit <b>15, 20 of 32 uur/week</b></span></div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-orange mr-2"></i><span>Vaste pakketten van <b>15, 20 of 32 uur/week</b></span></div>
                             <div class="flex items-center"><i class="fa-solid fa-check text-altrio-orange mr-2"></i><span><b>Uurtarief: € 69,-</b> (15% toeslag over basis)</span></div>
                             <div class="flex items-center"><i class="fa-solid fa-check text-altrio-orange mr-2"></i><span><b>EMD-screening</b> voor chronische zorgpaden</span></div>
                             <div class="flex items-center"><i class="fa-solid fa-check text-altrio-orange mr-2"></i><span><b>GRATIS</b> Premie Support &amp; Aanvraagservice</span></div>
@@ -130,11 +138,11 @@
                         <h3 class="text-2xl font-bold text-altrio-navy font-black">All-In Groei</h3>
                         <p class="text-xs text-altrio-muted">Breid uw community-lidmaatschap uit met websitebeheer en actieve digitale populatie- en preventiecampagnes.</p>
                         <div class="space-y-3 pt-4 border-t border-slate-100 text-xs text-altrio-muted">
-                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span>Keuze uit <b>15, 20 of 32 uur/week</b></span></div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span>Vaste pakketten van <b>15, 20 of 32 uur/week</b></span></div>
                             <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>Uurtarief: € 79,35</b> (+15% op Premium)</span></div>
-                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>Volledig onderhoud &amp; updates</b> van uw website</span></div>
-                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>Populatiemanagement:</b> proactieve screenings</span></div>
-                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>GRATIS</b> Premie Support &amp; Community voordelen</span></div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>Websitebeheer:</b> Volledig onderhoud &amp; updates van uw site</span></div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>Populatiemanagement:</b> Actieve preventiecampagnes</span></div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-altrio-blue mr-2"></i><span><b>GRATIS</b> Premie Support &amp; Community-voordelen</span></div>
                         </div>
                     </div>
                 </div>
@@ -148,8 +156,8 @@
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="inline-block bg-altrio-orange text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2">Scenario Simulator</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Bereken Uw Winst &amp; Ontdek de Eerlijke Loonkost</h2>
-                <p class="text-slate-300 mt-4">Simuleer de inzet van uw verpleegkundige, de RIZIV-subsidies én de werkelijke netto-loonkost van uw secretariaat (met of zonder Impulseo).</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Bereken de Winst van Rust</h2>
+                <p class="text-slate-300 mt-4">Simuleer de inzet van uw verpleegkundige, de RIZIV-subsidies én de werkelijke loonkost van uw secretariaat (met of zonder Impulseo).</p>
             </div>
 
             <div class="grid lg:grid-cols-12 gap-8 items-start">
@@ -172,7 +180,7 @@
                     <!-- 2. Huisartsen -->
                     <div class="space-y-1">
                         <div class="flex justify-between text-xs font-bold text-altrio-navy">
-                            <span>Aantal huisartsen:</span>
+                            <span>Aantal huisartsen in de praktijk:</span>
                             <span id="lbl_artsen" class="text-altrio-orange">5 artsen</span>
                         </div>
                         <input type="range" id="sl_artsen" min="1" max="10" value="5" class="w-full accent-altrio-orange">
@@ -202,7 +210,7 @@
                     <!-- 4. Secretariaat loondienst toggle -->
                     <div class="p-4 bg-slate-50 rounded-2xl flex items-center justify-between border border-slate-100">
                         <div>
-                            <span class="block text-xs font-bold text-altrio-navy">Secretariaat in loondienst?</span>
+                            <span class="block text-xs font-bold text-altrio-navy">Secretariaatsmedewerker in loondienst?</span>
                             <span class="text-[9px] text-altrio-muted">Dit activeert uw loonkost &amp; Impulseo.</span>
                         </div>
                         <label class="relative inline-flex items-center cursor-pointer">
@@ -218,6 +226,18 @@
                             <span id="lbl_loonkost" class="text-altrio-orange">&euro; 18.000</span>
                         </div>
                         <input type="range" id="sl_loonkost" min="10000" max="30000" step="1000" value="18000" class="w-full accent-altrio-orange">
+                    </div>
+
+                    <!-- 6. Optie voor Basis Begeleiding (enkel bij Basis) -->
+                    <div id="box_basis_support" class="p-4 bg-slate-50 rounded-2xl flex items-center justify-between border border-slate-100 hidden">
+                        <div>
+                            <span class="block text-xs font-bold text-altrio-navy">Volledige begeleiding aanvraag?</span>
+                            <span class="text-[9px] text-altrio-muted">5% fee op uw premie (no cure, no pay).</span>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="chk_basis_fee" class="sr-only peer">
+                            <div class="w-11 h-6 bg-slate-300 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
+                        </label>
                     </div>
                 </div>
 
@@ -261,7 +281,7 @@
                             </div>
                         </div>
 
-                        <!-- Premie Support Fee (enkel bij basis) -->
+                        <!-- Premie Support Fee -->
                         <div id="row_fee" class="flex justify-between items-center pb-2 border-b border-white/10 text-slate-300">
                             <span>Premie Support Service fee:</span>
                             <span id="out_fee" class="font-bold text-red-400">&euro; 0,00</span>
@@ -309,7 +329,7 @@
                 <div class="bg-altrio-light p-6 rounded-2xl border border-slate-100 relative pt-10">
                     <span class="absolute -top-3.5 left-6 bg-altrio-orange text-white text-xs font-bold px-3 py-1 rounded-full">Dienst 04, 06, 07, 13</span>
                     <h4 class="text-lg font-bold text-altrio-navy mb-2">Integrale Zorg</h4>
-                    <p class="text-xs text-altrio-muted leading-relaxed">Inzet voor technische wondzorg, geriatrische screening of een volwaardige VIHP. Volledig gedekt en gefinancierd door uw RIZIV-premie.</p>
+                    <p class="text-xs text-altrio-muted leading-relaxed">Inzet voor wondzorg, preventie of telesecretariaat. Premium Plus biedt bovendien websitebeheer en actieve preventiecampagnes.</p>
                 </div>
             </div>
         </div>
@@ -328,7 +348,7 @@
         </div>
     </footer>
 
-    <!-- LOGICA -->
+    <!-- INTERACTIEVE LOGICA -->
     <script>
         let currentTier = 'premium'; // default
         let currentHours = 15; // default for premium
@@ -341,11 +361,13 @@
         const slUren = document.getElementById('sl_uren');
         const chkSec = document.getElementById('chk_sec');
         const slLoonkost = document.getElementById('sl_loonkost');
+        const chkBasisFee = document.getElementById('chk_basis_fee');
 
         const lblArtsen = document.getElementById('lbl_artsen');
         const lblUren = document.getElementById('lbl_uren');
         const lblLoonkost = document.getElementById('lbl_loonkost');
         const boxLoonkost = document.getElementById('box_loonkost');
+        const boxBasisSupport = document.getElementById('box_basis_support');
         const vpkSliderBox = document.getElementById('vpk_slider_box');
         const vpkPakketBox = document.getElementById('vpk_pakket_box');
 
@@ -379,10 +401,12 @@
             if (tier === 'basis') {
                 vpkSliderBox.style.display = 'block';
                 vpkPakketBox.style.display = 'none';
+                boxBasisSupport.style.display = 'block';
                 currentHours = parseFloat(slUren.value);
             } else {
                 vpkSliderBox.style.display = 'none';
                 vpkPakketBox.style.display = 'grid';
+                boxBasisSupport.style.display = 'none';
                 if (currentHours !== 15 && currentHours !== 20 && currentHours !== 32) {
                     setHours(15);
                 } else {
@@ -404,6 +428,7 @@
             const artsen = parseInt(slArtsen.value);
             const heeftSec = chkSec.checked;
             const loonkostPerArts = parseFloat(slLoonkost.value);
+            const basisFeeChecked = chkBasisFee.checked;
             
             lblArtsen.textContent = artsen === 1 ? '1 arts' : `${artsen} artsen`;
             lblLoonkost.textContent = format(loonkostPerArts);
@@ -413,7 +438,7 @@
 
             let hourlyRate = 60;
             if (currentTier === 'premium') hourlyRate = 69; // €60 + 15%
-            if (currentTier === 'plus') hourlyRate = 79.35; // €69 + 15%
+            if (currentTier === 'plus') hourlyRate = 79.35; // €69 + 15% (Premium + 15%)
 
             let hours = currentTier === 'basis' ? parseFloat(slUren.value) : currentHours;
             lblUren.textContent = `${hours} uur/week`;
@@ -422,7 +447,7 @@
             const vpkCost = hours * hourlyRate * weken;
             outKost.textContent = format(vpkCost);
 
-            // RIZIV Premie
+            // RIZIV Premie Zorgcontinuïteit
             let premieVal = 0;
             let premieLabel = "Geen premie (< 6 uur)";
             if (hours >= 6 && hours <= 12) {
@@ -454,7 +479,7 @@
 
             // Fees
             let supportFee = 0;
-            if (currentTier === 'basis') {
+            if (currentTier === 'basis' && basisFeeChecked) {
                 rowFee.style.display = 'flex';
                 // Basis: 5% fee op de premie
                 supportFee = premieVal * 0.05;
@@ -483,6 +508,7 @@
         });
         chkSec.addEventListener('change', recalc);
         slLoonkost.addEventListener('input', recalc);
+        chkBasisFee.addEventListener('change', recalc);
 
         // Init
         setTier('premium');
